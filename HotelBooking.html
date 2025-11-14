@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form1</title>
+</head>
+<body>
+<center>
+    <h1 align="center">Hotel Room Booking Form</h1>
+    <form action="./response.html" method="get" name="hotel_room_booking" target="_blank">
+        <fieldset>
+            <label for="name">Name:</label>
+             <input id="name" type="text" name="name" required><br><br>
+            <label for="email">Email:</label>
+             <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Phone:</label>
+             <input name="phone" type="tel" id="phone"><br><br>
+            <label for="checkin">Check-in Date:</label>
+             <input name="checkin" id="checkin" type="date" required><br><br>
+            <label for="checkout">Check-out Date:</label>
+             <input name="checkout" id="checkout" type="date"><br><br>
+            <label for="room">Room Type</label>
+            <select name="room" id="select" required>
+                <optgroup label="Single Room">
+                    <option value="Single Room">Single Room</option>
+                    <option value="Single Room ac">Single Room AC</option>
+                    <option value="Single Room non ac">Single Room AC</option>
+                </optgroup>
+                <optgroup label="Family Room">
+                    <option value="Family Room ac">Family Room AC</option>
+                    <option value="Family Room non ac">Family Room AC</option>
+                </optgroup>
+            </select><br><br>
+            <label for="guest">Number Of Guests:</label>
+             <input id="guest" name="guest" type="tel"><br><br>
+            <label for="special_requests">Special Requests:</label><br>
+            <textarea name="request" id="special_requests"></textarea><br><br>
+            <input type="submit" value="Book Now"><br><br>
+            <input type="reset" value="Reset Form">
+        </fieldset>
+    </form>
+</center>
+</body>
+</html>
