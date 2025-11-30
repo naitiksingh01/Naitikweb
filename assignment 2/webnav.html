@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Website Navigation</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: "Times New Roman", serif;
+    }
+
+    .wrapper{
+      border:1px solid #000;
+      margin:5px;
+      padding:0;
+    }
+
+    .top-bar{
+      background:#e5e5e5;
+      padding:8px 0;
+      text-align:center;
+      font-size:14px;
+    }
+
+    .top-bar span.red{
+      color:red;
+    }
+
+    .nav-row{
+      margin:10px;
+    }
+
+    .nav-btn{
+      display:inline-block;
+      padding:6px 10px;
+      margin-right:5px;
+      border:1px solid #99c;
+      background:#cfe4ff;
+      font-size:13px;
+      text-decoration:none;
+      color:#000080;
+    }
+
+    .nav-btn.bottom{
+      border-color:#8ccf8c;
+      background:#bff0b8;
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="top-bar">
+    My <span class="red">Website</span> Navigation
+  </div>
+
+  <div class="nav-row">
+    <a href="#" class="nav-btn">Home</a>
+    <a href="#" class="nav-btn">About</a>
+    <a href="#" class="nav-btn">Services</a>
+    <a href="#" class="nav-btn">Contact</a>
+  </div>
+
+  <div class="nav-row">
+    <a href="#" class="nav-btn bottom">Dashboard</a>
+    <a href="#" class="nav-btn bottom">Profile</a>
+    <a href="#" class="nav-btn bottom">Messages</a>
+    <a href="#" class="nav-btn bottom">Logout</a>
+  </div>
+</div>
+
+</body>
+</html>
